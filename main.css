@@ -1,100 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-body{
-    height: 100vh;
-    background-image: url(bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
-.container{
-    position: absolute;
-    padding: 4px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    background-color:#FAFAFA;
-    text-align: center;
-    border-radius: 4px;
-    text-transform: uppercase;
-    text-align: center;
+body {
+  height: 100vh;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.title-box{
-    margin: 5px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    font-size: 1.5em;
- }  
-.league{
-   
-      
-}
-.league img{
-    
-}
-.league img{
-    height: 25px;
-    width:25px;
-}
-.title-box #goals{
-    font-size: 0.6em;
-}
-.team{
-    width: 25px;
-}
-.team img{
-    height: 25px;
-    width: 25px;
-}
-.matches-table{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    width: 100%
-}
-.match-tile{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 25px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%
-    
-}
-.match-tile img{
-    width: 25px;
-    height: 25px;
-
-}
-.match-tile p{
-    font-size: 0.6rem;
-    width: 25%;
+.container {
+  position: absolute;
+  padding: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: #fafafa;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.match-tile #goals{
-    font-size: 0.6rem;
-    width: 25%;
+.title-box {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5em;
 }
-.match-tile .team{
-    width: 25%;
+.league {
+}
+.league img {
+}
+.league img {
+  height: 25px;
+  width: 25px;
+}
+.title-box #goals {
+  font-size: 0.6em;
+}
+.team {
+  width: 25px;
+}
+.team img {
+  height: 25px;
+  width: 25px;
+}
+.matches-table {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.match-tile {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 25px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.match-tile img {
+  width: 25px;
+  height: 25px;
+}
+.match-tile p {
+  font-size: 0.6rem;
+  width: 25%;
+}
+
+.match-tile #goals {
+  font-size: 0.6rem;
+  width: 25%;
+}
+.match-tile .team {
+  width: 25%;
 }
 .match-tile .league {
   width: 25%;
