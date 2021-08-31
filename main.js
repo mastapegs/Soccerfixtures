@@ -71,21 +71,18 @@ fetch("https://v3.football.api-sports.io/fixtures?date=2021-08-31", {
     }
 })
     .then(response => response.json())
-    .then(data => {
-        var matchesList = data['response'];
-        var fixture = matchesList[0]['fixture'];
-        var goals = matchesList[0]['goals'];
-        var teams = matchesList[0]['teams'];
-        var league = matchesList[0]['league'];
-        console.log(matchesList.length);
-        //Now let's set our first match
-        leagueName = league['name'];
-        leagueLogo = league['logo'];
+    .then(({ response }) => {
+        const matchesList = response;
+        const firstMatch = matchesList[0]
+
+        const { goals, teams } = firstMatch
 
         homeTeamImage.src = teams['home']['logo'];
         homeTeamName.innerHTML = teams['home']['name'];
+
         awayTeamImage.src = teams['away']['logo'];
         awayTeamName.innerHTML = teams['away']['name'];
+        
         lastMatchGoal.innerHTML = goals['home'] + " - " + goals['away'];
 
         for (var i = 1; i < matchesList.length; i++) {
